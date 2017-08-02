@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Two-Columned</title>
+        <style>
+            body {
+                margin: 0;
+            }
+            .main_container {
+                display: flex;
+            }
+            .sidebar {
+                flex: 0 0 300px;
+                margin-right: 30px;
+                background: lightgreen;
+            }
+            .maincol {
+                flex: 1 1 auto;
+                margin-left: 30px;
+                background: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="main_container">
+                <div class="sidebar">
+                    sidebar
+                </div>
+                <div class="maincol">
+                    maincol
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
