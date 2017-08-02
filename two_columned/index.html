@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Two-Columned</title>
+        <style>
+            body {
+                margin: 0;
+            }
+            .main_container {
+                overflow: hidden;
+            }
+            .sidebar {
+                float: left;
+                width: 300px;
+                background: lightgreen;
+            }
+            .maincol_container {
+                float: right;
+                width: 100%;
+                margin-left: -360px; /* same value as margin-left of .maincol */
+            }
+            .maincol {
+                margin-left: 360px; /* 300 for .sidebar + 60 for spacer */
+                background: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="main_container">
+                <div class="sidebar">
+                    sidebar
+                </div>
+                <div class="maincol_container">
+                    <div class="maincol">
+                        maincol
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
