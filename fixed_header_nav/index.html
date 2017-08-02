@@ -3,68 +3,7 @@
 <html>
     <head>
         <title>Fixed Header-Nav</title>
-        <style>
-            html * {
-                margin: 0;
-            }
-            header {
-                display: flex;
-                background: black;
-            }
-            header h1 {
-                color: white;
-                font-size: 36px;
-                font-weight: bold;
-                transform: scaleX(1.4);
-                padding: 20px 0 0 40px;
-            }
-            header div.search {
-                margin-top: auto;
-                margin-left: auto;
-                margin-right: 10px;
-            }
-            header div.search input[type="text"] {
-                width: 200px;
-                height: 20px;
-                border: 3px solid #2CA9B4;
-                border-right: none;
-                border-radius: 15px 0 0 15px;
-                padding-left: 10px;
-            }
-            header div.search input[type="submit"] {
-                height: 28px;
-                font-size: 12px;
-                color: white;
-                background: #2CA9B4;
-                border: none;
-                border-radius: 0 15px 15px 0;
-                padding: 0 10px;
-            }
-            nav {
-                background: black;
-                border-bottom: 5px solid #37A29B;
-            }
-            nav ul {
-                display: flex;
-                list-style: none;
-                margin: 0;
-                padding: 10px 10px 0px 10px;
-            }
-            nav ul li:last-child {
-                margin-left: auto;
-            }
-            nav ul li a {
-                display: block;
-                padding: 10px 20px;
-                color: white;
-                text-decoration: none;
-                font-size: small;
-            }
-            nav ul li a:hover {
-                background: #37A29B;
-                border-radius: 10px 10px 0 0;
-            }
-        </style>
+        <link href="./style.css" rel="stylesheet">
     </head>
     <body>
         <div class="header_nav_wrapper">
@@ -85,6 +24,50 @@
                     <li><a href="#">お問い合わせ</a></li>
                 </ul>
             </nav>
+        </div>
+        <div class="main_wrapper">
+            <main>
+                <ul class="items">
+                    <li class="item">
+                        <div class="head">A</div>
+                        <div class="body">ABC</div>
+                    </li>
+                    <li class="item">
+                        <div class="head">D</div>
+                        <div class="body">DEF</div>
+                    </li>
+                    <li class="item">
+                        <div class="head">G</div>
+                        <div class="body">GHI</div>
+                    </li>
+                    <li class="item">
+                        <div class="head">J</div>
+                        <div class="body">JKL</div>
+                    </li>
+                    <li class="item">
+                        <div class="head">M</div>
+                        <div class="body">MNO</div>
+                    </li>
+                    <li class="item">
+                        <div class="head">P</div>
+                        <div class="body">PQR</div>
+                    </li>
+                    <li class="item">
+                        <div class="head">S</div>
+                        <div class="body">STU</div>
+                    </li>
+                    <li class="item">
+                        <div class="head">V</div>
+                        <div class="body">VW</div>
+                    </li>
+                    <li class="item">
+                        <div class="head">X</div>
+                        <div class="body">XYZ</div>
+                    </li>
+                </ul>
+            </main>
+            <footer>
+            </footer>
         </div>
     </body>
 </html>
