@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Tab Navigator</title>
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+
+        <style>
+            div.tab {
+                width: 800px;
+            }
+            ul.tabmenu {
+                list-style: none;
+                border-bottom: 3px solid #1495b5;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            ul.tabmenu li {
+                float: left;
+                background: #d9dfe1;
+                border-radius: 10px 10px 0px 0px;
+                padding: 5px 20px;
+                margin-right: 10px;
+            }
+            ul.tabmenu li a {
+                display: block;
+                padding: 5px 30px;
+                color: black;
+                font-size: small;
+                text-decoration: none;
+                letter-spacing: 5px;
+            }
+            ul.tabmenu li a::after {
+                font-family: FontAwesome;
+                content: "\f064";
+                margin-left: 5px;
+            }
+            ul.tabmenu li.current {
+                background: #1495b5;
+            }
+            ul.tabmenu li.current a {
+                color: white;
+            }
+        </style>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function(e) {
+                let tabs = document.querySelectorAll('ul.tabmenu li');
+                for (let i = 0; i < tabs.length; i++) {
+                    tabs[i].addEventListener('click', function(e) {
+                        let tabCurrent = document.querySelector('ul.tabmenu li.current');
+                        tabCurrent.className = '';
+                        tabs[i].className = 'current';
+                    });
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <div class="tab">
+            <ul class="tabmenu">
+                <li class="current"><a href="#">概要</a></li>
+                <li><a href="#">外観</a></li>
+                <li><a href="#">デザイン</a></li>
+                <li><a href="#">仕様</a></li>
+            </ul>
+        </div>
+        <div class="contents">
+            <p>コンパクトでどこでも持ち運べる</p>
+            <p>圧倒的な表現力</p>
+        </div>
+    </body>
+</html>
