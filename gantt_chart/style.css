@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+th:first-child, td:first-child {
+    border-right: 2px solid black;
+}
+
+th {
+    font-weight: normal;
+    border-bottom: 2px solid black;
+}
+
+td:not(:first-child) {
+    width: 25px;
+    font-size: 10px;
+    padding: 4px 0px;
+    background-clip: content-box;
+}
+
+td.on {
+    background-color: black;
+}
