@@ -25,4 +25,9 @@ td:not(:first-child) {
 
 td.on {
     background-color: black;
+    text-align: right;
+}
+
+span.bar_end {
+    cursor: w-resize;
 }
