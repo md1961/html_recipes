@@ -1,0 +1,31 @@
+.global-nav {
+  background-color: #4DB6AC;
+}
+
+.global-nav__items {
+  list-style-type: none;
+  display: flex;
+  height: 44px;
+}
+
+.global-nav__item {
+  flex: 1;
+}
+
+.global-nav__item-link {
+  background-color: #4DB6AC;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  line-height: 44px;
+  text-align: center;
+}
+
+.global-nav__item-link:hover {
+  background-color: #80CBC4;
+}
+
+.global-nav__item-link:active {
+  background-color: #B2DFDB;
+}
